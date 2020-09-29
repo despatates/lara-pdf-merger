@@ -1,11 +1,14 @@
 {
-    "name": "lynx39/lara-pdf-merger",
+    "name": "despatates/lara-pdf-merger",
     "description": "",
     "keywords": ["merger","merge","pdf","manage","paginate", "laravel"],
     "license" : [
         "MIT"
     ],
     "authors": [
+        {
+            "name": "Yvan G."
+        },
         {
             "name": "Michael Musso",
             "email": "lynx@deltaaskii.com",
@@ -15,7 +18,7 @@
     "require": {
         "php" : ">=5.4"
     },
-    "homepage" : "https://github.com/LynX39/lara-pdf-merger",
+    "homepage" : "https://github.com/despatates/lara-pdf-merger",
     "autoload": {
         "psr-0": {
             "LynX39\\LaraPdfMerger": "src/"

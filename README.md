@@ -1,18 +1,26 @@
 # lara-pdf-merger
 
+## Update
+
+Since https://github.com/deltaaskii/lara-pdf-merger is no more available, fork the repo to maintain projects using it.
+
+See https://packagist.org/packages/lynx39/lara-pdf-merger for original package.
+
+---
+
 Original written by http://pdfmerger.codeplex.com/team/view<br/>
 
-###Update
+### Update
 
 Change parsers and use tcpdf, tcpdi and tcpdi_parser
-  
+
 ## Installation
 
 ### Laravel 5.x:
 
 Require this package in your composer.json and update composer.
 
-    "lynx39/lara-pdf-merger": "dev-master",
+    "despatates/lara-pdf-merger": "dev-master",
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
 
@@ -21,7 +29,7 @@ After updating composer, add the ServiceProvider to the providers array in confi
 You can optionally use the facade for shorter code. Add this to your facades:
 
     'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
-    
+
 ## Using
 
 ```php
@@ -39,6 +47,6 @@ $pdf->addPDF('samplepdfs/two.pdf', '1-2', 'P);
 $pdf->merge('file', 'samplepdfs/TEST2.pdf', 'P');
 
 // REPLACE 'file' WITH 'browser', 'download', 'string', or 'file' for output options
-// Last parameter is for orientation (P for protrait, L for Landscape). 
+// Last parameter is for orientation (P for protrait, L for Landscape).
 // This will be used for every PDF that doesn't have an orientation specified
 ```
